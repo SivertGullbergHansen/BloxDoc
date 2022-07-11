@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[8290],{1138:e=>{e.exports=JSON.parse('{"title":"Consumable","slug":"/category/consumable","permalink":"/BloxDoc/category/consumable","navigation":{"previous":{"title":"Shotgun Shell","permalink":"/BloxDoc/games/twd/items/4"},"next":{"title":"Drink","permalink":"/BloxDoc/category/drink"}}}')}}]);

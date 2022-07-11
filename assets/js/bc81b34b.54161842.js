@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[6519],{8712:e=>{e.exports=JSON.parse('{"title":"Revolver","slug":"/category/revolver","permalink":"/BloxDoc/category/revolver","navigation":{"previous":{"title":"Beretta M9","permalink":"/BloxDoc/games/twd/items/7"},"next":{"title":"M412 REX","permalink":"/BloxDoc/games/twd/items/1"}}}')}}]);

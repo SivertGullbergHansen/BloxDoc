@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[1938],{6020:e=>{e.exports=JSON.parse('{"title":"Weapon","slug":"/category/weapon","permalink":"/BloxDoc/category/weapon","navigation":{"previous":{"title":"Used Shotgun Shells","permalink":"/BloxDoc/games/twd/items/5"},"next":{"title":"Pistol","permalink":"/BloxDoc/category/pistol"}}}')}}]);
