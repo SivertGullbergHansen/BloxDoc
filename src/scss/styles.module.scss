@@ -1,0 +1,14 @@
+.itemDetails {
+  background: #11111120;
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  width: 400px;
+  div {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

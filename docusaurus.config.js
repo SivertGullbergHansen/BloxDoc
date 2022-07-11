@@ -6,9 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Sivert's Documentation",
+  tagline: "Roblox Documentation",
+  url: "https://sivertgullberghansen.github.io/",
   baseUrl: "/BloxDoc/",
   trailingSlash: false,
   onBrokenLinks: "throw",
@@ -27,6 +27,8 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+
+  plugins: ["docusaurus-plugin-sass"],
 
   presets: [
     [

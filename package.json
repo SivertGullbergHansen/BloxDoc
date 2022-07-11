@@ -5,7 +5,9 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build && mv build ../build",
+    "generate": "node generateItems.js",
+    "build": " docusaurus build && mv build ../build",
+    "prepare": "npm run generate && npm run build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -18,12 +20,20 @@
     "@docusaurus/preset-classic": "2.0.0-beta.22",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.2.0",
+    "docusaurus-plugin-sass": "^0.2.2",
+    "install": "^0.13.0",
+    "mdx-variables": "^1.0.3",
+    "npm": "^8.13.2",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.0.0-beta.22"
+    "@docusaurus/module-type-aliases": "2.0.0-beta.22",
+    "concurrently": "^7.2.2",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.73.0"
   },
   "browserslist": {
     "production": [
