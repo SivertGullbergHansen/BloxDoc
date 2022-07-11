@@ -17,7 +17,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "SivertGullbergHansen", // Usually your GitHub org/user name.
+  organizationName: "sivertgullberghansen.github.io/BloxDoc", // Usually your GitHub org/user name.
   projectName: "BloxDoc", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
