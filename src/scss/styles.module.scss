@@ -8,6 +8,39 @@
     border-radius: 8px;
     padding: 24px;
     text-align: center;
+    position: relative;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    table,
+    image {
+      margin: 0;
+    }
+
+    table {
+      width: 100%;
+      display: table;
+      text-align: left;
+    }
+
+    .itemId {
+      position: absolute;
+      top: 0;
+      right: 6px;
+      width: fit-content;
+      height: fit-content;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+    }
 
     img {
       width: 100%;

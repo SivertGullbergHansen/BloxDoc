@@ -9,6 +9,7 @@ export default function ItemDetails({ id = 0, json = "", children }) {
     <div className={styles.itemDetails}>
       <p>{json.description}</p>
       <div>
+        <p className={styles.itemId}>ID: {id}</p>
         <img
           src={
             itemData.assetId > 0
@@ -17,16 +18,20 @@ export default function ItemDetails({ id = 0, json = "", children }) {
           }
           alt=""
         />
-        <h1>{json.rarity}</h1>
-        <h3>{json.itemType}</h3>
+        <h1>{json.category}</h1>
+        <h2>{json.itemType}</h2>
+        <h3>{json.rarity}</h3>
         <table>
           <tr>
             <th>Inventory Size</th>
             <td>{json.itemSize}</td>
           </tr>
           <tr>
-            <th>Weight</th>
-            <td>{json.weight}g</td>
+            <th>{json.itemType !== "Drink" ? "Weight" : "Volume"}</th>
+            <td>
+              {json.itemType !== "Drink" ? json.weight : json.weight / 1000}
+              {json.itemType !== "Drink" ? "g" : "L"}
+            </td>
           </tr>
           {json.equipSlot && (
             <tr>

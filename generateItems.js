@@ -12,7 +12,7 @@ for (let i = 0; i < jsonData.length; i++) {
   const category = item.category;
   const subCategory = item.itemType;
   const name = item.name;
-  const description = item.description ? item.description : "";
+  const itemId = i + 1;
 
   const firstPath = path.join(
     __dirname,
@@ -31,18 +31,18 @@ for (let i = 0; i < jsonData.length; i++) {
     "docs/Games/The Walking Dead/Game Data/Items",
     category,
     subCategory,
-    i.toString() + ".mdx"
+    itemId.toString() + ".mdx"
   );
 
   const content = `---
-slug: /games/twd/items/${i}
+slug: /games/twd/items/${itemId}
 ---
 
 import ItemDetails from "@site/src/components/itemDetails";
 
 # ${name}
 
-<ItemDetails id={${i}} json={${JSON.stringify(item)}}></ItemDetails>`;
+<ItemDetails id={${itemId}} json={${JSON.stringify(item)}}></ItemDetails>`;
 
   try {
     if (!fs.existsSync(firstPath)) {

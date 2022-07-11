@@ -83,6 +83,13 @@ const config = {
         style: "dark",
         links: [
           {
+            title: "Quick Links",
+            items: [
+              { label: "The Walking Dead", to: "/category/the-walking-dead" },
+              { label: "Swords & Sorcery", to: "/category/swords--sorcery" },
+            ],
+          },
+          {
             title: "Community",
             items: [
               {
@@ -97,26 +104,18 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/rblxSivert",
               },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/rblxSivert",
-              },
             ],
           },
           {
             title: "Contact",
             items: [
               {
-                label: "DM me on Twitter!",
+                label: "Dm me on Twitter!",
                 href: "https://twitter.com/messages/compose?recipient_id=1483378332192366598&text=I%20have%20a%20question!",
               },
               {
                 label: "GitHub",
                 href: "https://github.com/SivertGullbergHansen",
-              },
-              {
-                label: "Linkedin",
-                href: "https://www.linkedin.com/in/sivertgullberghansen",
               },
             ],
           },
