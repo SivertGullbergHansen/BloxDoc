@@ -1,0 +1,3 @@
+[submodule "BloxDoc"]
+	path = BloxDoc
+	url = https://github.com/SivertGullbergHansen/BloxDoc.git
