@@ -9,7 +9,7 @@ const config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
   url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  baseUrl: "/BloxDoc/",
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
