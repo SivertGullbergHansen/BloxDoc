@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[9027],{672:e=>{e.exports=JSON.parse('{"title":"Ammo Box","slug":"/category/ammo-box","permalink":"/BloxDoc/category/ammo-box","navigation":{"previous":{"title":"Container","permalink":"/BloxDoc/category/container"},"next":{"title":"Box of 9mm Ammo","permalink":"/BloxDoc/games/twd/items/9"}}}')}}]);

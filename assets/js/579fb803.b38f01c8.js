@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[4331],{4491:e=>{e.exports=JSON.parse('{"title":"Games overview","slug":"/category/games","permalink":"/BloxDoc/category/games","navigation":{"previous":{"title":"Home","permalink":"/BloxDoc/"},"next":{"title":"Swords & Sorcery","permalink":"/BloxDoc/category/swords--sorcery"}}}')}}]);
