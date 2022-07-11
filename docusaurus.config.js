@@ -35,13 +35,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          routeBasePath: "/", // Serve the docs at the site's root
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -56,24 +50,29 @@ const config = {
       navbar: {
         title: "Sivert's Documentation",
         logo: {
-          alt: "My Site Logo",
+          alt: "Site Logo",
           src: "img/logo.svg",
+          srcDark: "img/logo_dark.svg",
+          href: "/",
+          target: "_self",
+          width: 32,
+          height: 32,
         },
         items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Docs",
-          },
+          // {
+          //   type: "doc",
+          //   docId: "intro",
+          //   position: "left",
+          //   label: "Docs",
+          // },
           {
             href: "https://twitter.com/rblxSivert",
             label: "Twitter",
-            position: "left",
+            position: "right",
           },
           {
             href: "https://www.roblox.com/users/2301614/profile",
-            label: "Roblox",
+            label: "Roblox Profile",
             position: "right",
           },
         ],
@@ -85,7 +84,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Docs",
                 to: "/docs/intro",
               },
             ],
@@ -94,8 +93,12 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Roblox",
+                label: "Roblox Group",
+                href: "https://www.roblox.com/groups/10299071/EAST#!/about",
+              },
+              {
                 href: "https://www.roblox.com/users/2301614/profile",
+                label: "Roblox Profile",
               },
               {
                 label: "Twitter",
@@ -108,11 +111,11 @@ const config = {
             ],
           },
           {
-            title: "More",
+            title: "Contact",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "DM me on Twitter!",
+                href: "https://twitter.com/messages/compose?recipient_id=1483378332192366598&text=I%20have%20a%20question!",
               },
               {
                 label: "GitHub",
