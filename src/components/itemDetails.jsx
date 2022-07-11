@@ -7,8 +7,11 @@ export default function ItemDetails({ id = 0, json = "", children }) {
 
   return (
     <div className={styles.itemDetails}>
-      <p>{json.description}</p>
       <div>
+        <h2>Description</h2>
+        <p>{json.description}</p>
+      </div>
+      <div className={styles.itemCard}>
         <p className={styles.itemId}>ID: {id}</p>
         <img
           src={
@@ -16,11 +19,11 @@ export default function ItemDetails({ id = 0, json = "", children }) {
               ? `https://thumbnails.roblox.com/v1/assets?assetIds=${itemData.assetId}&returnPolicy=PlaceHolder&size=700x700&format=Png&isCircular=false`
               : useBaseUrl("/img/placeholder.png")
           }
-          alt=""
+          alt="item model preview"
         />
-        <h1>{json.category}</h1>
-        <h2>{json.itemType}</h2>
-        <h3>{json.rarity}</h3>
+        <h3>{json.category}</h3>
+        <h4>{json.itemType}</h4>
+        <h5>{json.rarity}</h5>
         <table>
           <tr>
             <th>Inventory Size</th>

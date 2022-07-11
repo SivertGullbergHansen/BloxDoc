@@ -3,7 +3,7 @@
   grid-template-columns: 70% 30%;
   width: 100%;
 
-  div {
+  .itemCard {
     background: #11111180;
     border-radius: 8px;
     padding: 24px;
@@ -20,6 +20,8 @@
     h2,
     h3,
     h4,
+    h5,
+    h6,
     table,
     image {
       margin: 0;
