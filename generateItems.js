@@ -11,9 +11,8 @@ for (let i = 0; i < jsonData.length; i++) {
   let item = jsonData[i];
   const category = item.category;
   const subCategory = item.itemType;
-  const assetId = item.assetId;
   const name = item.name;
-  const description = item.description;
+  const description = item.description ? item.description : "";
 
   const firstPath = path.join(
     __dirname,
@@ -23,6 +22,7 @@ for (let i = 0; i < jsonData.length; i++) {
   const secondPath = path.join(
     __dirname,
     "docs/games/the walking dead/game data/items",
+    category,
     subCategory
   );
 
@@ -31,34 +31,29 @@ for (let i = 0; i < jsonData.length; i++) {
     "docs/Games/The Walking Dead/Game Data/Items",
     category,
     subCategory,
-    i.toString(),
-    ".mdx"
+    i.toString() + ".mdx"
   );
 
   const content = `---
-  \nslug: /games/twd/items/${i}
-  \n---
-  \n
-  \nimport ItemDetails from "@site/src/components/itemDetails";
-  \n
-  \n# ${name}
-  \n
-  \n<ItemDetails id={${i}} assetId={${assetId}}>${description}</ItemDetails>
-  `;
+slug: /games/twd/items/${i}
+---
+
+import ItemDetails from "@site/src/components/itemDetails";
+
+# ${name}
+
+<ItemDetails id={${i}} json={${JSON.stringify(item)}}></ItemDetails>`;
 
   try {
-    console.log(dirPath);
-    console.log("writing for item:", item.name, "...");
-
     if (!fs.existsSync(firstPath)) {
       fs.mkdirSync(firstPath);
       fs.copyFileSync(categoryLink, path.join(firstPath, "_category_.json"));
     }
-
     if (!fs.existsSync(secondPath)) {
       fs.mkdirSync(secondPath);
       fs.copyFileSync(categoryLink, path.join(secondPath, "_category_.json"));
     }
+
     fs.writeFileSync(dirPath, content);
 
     // file written successfully
@@ -66,3 +61,5 @@ for (let i = 0; i < jsonData.length; i++) {
     console.error(err);
   }
 }
+
+console.log("Success!");
