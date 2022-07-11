@@ -1,4 +1,0 @@
-[submodule "BloxDoc"]
-	path = build
-	url = https://github.com/SivertGullbergHansen/BloxDoc.git
-    branch = build
