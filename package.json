@@ -6,7 +6,7 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "generate": "node generateItems.js",
-    "build": " docusaurus build && mv build ../",
+    "build": " docusaurus build && cd ../build && rm -r * && cd ../source && mv build ../",
     "production": "npm run generate && npm run build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
