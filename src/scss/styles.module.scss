@@ -1,11 +1,14 @@
 .itemDetails {
-  background: #11111120;
-
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 70% 30%;
+  width: 100%;
 
-  width: 400px;
   div {
+    background: #11111180;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+
     img {
       width: 100%;
       height: auto;

@@ -1,1 +1,1 @@
-## All specifications of the 'walkers'
+All specifications of the 'walkers'

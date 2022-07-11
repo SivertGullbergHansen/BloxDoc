@@ -1,1 +1,1 @@
-## All specifications of the player
+All specifications of the player
