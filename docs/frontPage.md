@@ -11,6 +11,6 @@ Welcome to **Sivert's Documentation**.
 
 Use the sidebar on the left side to browse documentation.
 
-Documentation is grouped by category, if you need documentation for a Game then head over to the [Games](category/games/)-category.
+Documentations are sorted using categories. If you need documentation for a Game then head over to the [Games](category/games/)-category.
 
 Scripts can be found in the [Scripts](category/scripts/)-category.

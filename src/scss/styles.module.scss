@@ -3,6 +3,10 @@
   grid-template-columns: 70% 30%;
   width: 100%;
 
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 100%;
+  }
+
   .itemCard {
     background: #11111180;
     border-radius: 8px;

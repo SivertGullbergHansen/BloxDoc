@@ -25,29 +25,31 @@ export default function ItemDetails({ id = 0, json = "", children }) {
         <h4>{json.itemType}</h4>
         <h5>{json.rarity}</h5>
         <table>
-          <tr>
-            <th>Inventory Size</th>
-            <td>{json.itemSize}</td>
-          </tr>
-          <tr>
-            <th>{json.itemType !== "Drink" ? "Weight" : "Volume"}</th>
-            <td>
-              {json.itemType !== "Drink" ? json.weight : json.weight / 1000}
-              {json.itemType !== "Drink" ? "g" : "L"}
-            </td>
-          </tr>
-          {json.equipSlot && (
+          <tbody>
             <tr>
-              <th>Equip Slot</th>
-              <td>{json.equipSlot}</td>
+              <th>Inventory Size</th>
+              <td>{json.itemSize}</td>
             </tr>
-          )}
-          {json.slots && (
             <tr>
-              <th>Volume (slots)</th>
-              <td>{json.slots}</td>
+              <th>{json.itemType !== "Drink" ? "Weight" : "Volume"}</th>
+              <td>
+                {json.itemType !== "Drink" ? json.weight : json.weight / 1000}
+                {json.itemType !== "Drink" ? "g" : "L"}
+              </td>
             </tr>
-          )}
+            {json.equipSlot && (
+              <tr>
+                <th>Equip Slot</th>
+                <td>{json.equipSlot}</td>
+              </tr>
+            )}
+            {json.slots && (
+              <tr>
+                <th>Volume (slots)</th>
+                <td>{json.slots}</td>
+              </tr>
+            )}
+          </tbody>
         </table>
       </div>
     </div>
