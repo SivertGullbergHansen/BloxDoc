@@ -33,8 +33,8 @@ export default function ItemDetails({ id = 0, json = "", children }) {
             <tr>
               <th>{json.itemType !== "Drink" ? "Weight" : "Volume"}</th>
               <td>
-                {json.itemType !== "Drink" ? json.weight : json.weight / 1000}
-                {json.itemType !== "Drink" ? "g" : "L"}
+                {json.itemType !== "Drink" ? json.weight : json.weight}
+                {json.itemType !== "Drink" ? "g" : "ml"}
               </td>
             </tr>
             {json.equipSlot && (
